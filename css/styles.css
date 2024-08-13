@@ -1,0 +1,89 @@
+#skills .list-group-item {
+    border: none;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+body {
+    background-color: #FBE9D0; /* Light Beige background */
+    color: #244855; /* Dark Blue text color */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #244855; /* Dark Blue background for header */
+}
+
+.navbar-nav .nav-link {
+    color: #FBE9D0; /* Light Beige text color for nav links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E64833; /* Bright Orange on hover */
+}
+
+#home {
+    background-color: #90AEAD; /* Soft Teal background (same as About Me section) */
+    color: #244855; /* Light Beige text color */
+}
+
+#about {
+    background-color: #FBE9D0; /* Light Beige background (same as Skills section) */
+    color: #244855; /* Dark Blue text color */
+}
+
+#skills {
+    background-color: #FBE9D0; /* Light Beige background */
+    color: #244855; /* Dark Blue text color */
+}
+
+#projects {
+    background-color: #E64833; /* Bright Orange background */
+    color: #244855; /* Light Beige text color */
+}
+
+.card {
+    border: 1px solid #874F41; /* Warm Brown border for cards */
+}
+
+.card-body {
+    background-color: #FBE9D0; /* Light Beige background for card body */
+}
+
+#resume {
+    background-color: #90AEAD; /* Soft Teal background */
+    color: #244855; /* Dark Blue text color */
+}
+
+#contact {
+    background-color: #FBE9D0; /* Light Beige background */
+    color: #244855; /* Dark Blue text color */
+}
+
+#social-media {
+    background-color: #90AEAD; /* Soft Teal background */
+    color: #244855; /* Dark Blue text color */
+}
+
+.btn-primary {
+    background-color: #E64833; /* Bright Orange background for buttons */
+    border-color: #E64833; /* Bright Orange border for buttons */
+}
+
+a {
+    color: #244855; /* Dark Blue link color */
+}
+
+a:hover {
+    color: #E64833; /* Bright Orange link color on hover */
+}
