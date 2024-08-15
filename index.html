@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Patrick Hennessey's Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">Patrick Justus Hennessey</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,12 +19,20 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <a class="dropdown-item" href="#find-your-fur-baby">Find Your Fur Baby</a>
+                            <a class="dropdown-item" href="#weather-app">Weather App</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section id="home" class="text-center py-5">
+    <section id="home" class="text-center text-white py-5">
         <div class="container">
             <h1 class="display-4">Hello, I'm Patrick Justus Hennessey</h1>
             <p class="lead">A Full stack Software Developer.</p>
@@ -33,19 +41,67 @@
     </section>
     <section id="about" class="py-5">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a results-driven Software Developer with a background in Philosophy, a passion for driving operational excellence, 
-                and a comprehensive foundation in computer science. I am eager to secure a position that leverages my skills in 
-                operational improvement, database development, web development, and programming. Adept in critical 
-                thinking and effective in interpersonal communication. Additionally, I am a proficient writer in clear and concise prose 
-                due to my background in philosophy. Finally, I am a dedicated musician and drummer, and play gigs regularly.</p>
-        </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>I am a results-driven Software Developer with a background in Philosophy, a passion for driving operational excellence, 
+                        and a comprehensive foundation in computer science. I am eager to secure a position that leverages my skills in 
+                        operational improvement, database development, web development, and programming. Adept in critical 
+                        thinking and effective in interpersonal communication. Additionally, I am a proficient writer in clear and concise prose 
+                        due to my background in philosophy. Finally, I am a dedicated musician and drummer, and play gigs regularly.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img id="profilePhoto" src="./assets/images/profilePic.jpg" alt="Patrick Hennessey" class="img-fluid rounded-circle" style="max-width: 75%;">
+                </div>
+            </div>
+        </div>    
     </section>
     <section id="projects" class="bg-light py-5">
         <div class="container">
             <h2>Projects</h2>
             <div class="row">
-                <!-- Project cards -->
+                <div id="find-your-fur-baby" class="col-md-4">
+                    <div class="card">
+                        <a href="https://pawsitive-connections.github.io/find-your-fur-baby/" target="_blank">
+                            <img src="assets/images/fur-baby.jpg" class="card-img-top" alt="Find Your Fur Baby">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Find Your Fur Baby</h4>
+                            <p class="card-text">Allows users to take a quiz to determine what breed fits best with the user.</p>
+                            <h5>Technologies Used:</h5>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>HTML & CSS</li>
+                                    <li>CSS Materialize</li>
+                                    <li>APIs</li>
+                                </ul>
+                            <a href="https://github.com/Pawsitive-Connections/find-your-fur-baby" class="btn btn-primary">View Code</a>
+                            <a href="https://pawsitive-connections.github.io/find-your-fur-baby/" class="btn btn-primary">View Website</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather-app" class="col-md-4">
+                    <div class="card">
+                        <a href="https://rickhennessey87.github.io/Patrick-Hennessey-s-weather-app/">
+                            <img src="assets/images/weather.jpg" class="card-img-top" alt="Weather App">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Weather App</h4>
+                            <p class="card-text">My weather app uses third-party APIs to deliver detailed weather reports using HTML, CSS, JavaScript, jQuery, and Materialize CSS framework.</p>
+                            <h5>Technologies Used:</h5>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>HTML & CSS</li>
+                                    <li>CSS Materialize</li>
+                                    <li>APIs</li>
+                                </ul>
+                            <a href="https://github.com/RickHennessey87/Patrick-Hennessey-s-weather-app" class="btn btn-primary">View Code</a>
+                            <a href="https://rickhennessey87.github.io/Patrick-Hennessey-s-weather-app/" class="btn btn-primary">View Website</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -53,7 +109,36 @@
         <div class="container">
             <h2>Skills</h2>
             <div class="row">
-                <!-- Skills list -->
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">HTML & CSS</li>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">React</li>
+                        <li class="list-group-item">jQuery</li>
+                        <li class="list-group-item">Node.js</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">Express.js</li>
+                        <li class="list-group-item">MongoDB</li>
+                        <li class="list-group-item">SQL</li>
+                        <li class="list-group-item">Git</li>
+                        <li class="list-group-item">APIs</li>
+                        <li class="list-group-item">AJAX</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">Testing</li>
+                        <li class="list-group-item">Database Theory</li>
+                        <li class="list-group-item">Computer Science</li>
+                        <li class="list-group-item">Project Management</li>
+                        <li class="list-group-item">AI</li>
+                        <li class="list-group-item">Writing</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

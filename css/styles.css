@@ -87,3 +87,55 @@ a {
 a:hover {
     color: #E64833; /* Bright Orange link color on hover */
 }
+
+#about img {
+    border: 5px solid #244855; /* Optional: Adds a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+.clicked-style {
+    border: 5px solid #E64833; /* Example: change border color */
+    transform: scale(1.1); /* Example: slightly enlarge the image */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Example: add a shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for the effect */
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu.show {
+    display: block; /* Show the dropdown when the 'show' class is added */
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    #about img {
+        max-width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+.text-center-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
